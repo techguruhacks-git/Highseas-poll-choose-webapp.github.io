@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);    color: #fff;
+}
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    background: rgb(7, 202, 246);
+    animation: animate 15s infinite;
+    box-shadow: 0px 0px 1px 0px #508fb9;
+
+}
+.circle2{
+    position: absolute;
+    border-radius: 50%;
+    background: rgb(234, 12, 134);
+    animation: animates 15s infinite;
+    box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.xxlarge{
+    width: 1100px;
+    height: 1100px;
+    left: -500px;
+    bottom: -500px;
+}
+
+.small{
+    width: 200px;
+    height: 200px;
+    left: -100px;
+    bottom: -100px;
+}
+.medium{
+    width: 400px;
+    height: 400px;
+    left: -200px;
+    bottom: -200px;
+}
+.large{
+    width: 600px;
+    height: 600px;
+    left: -300px;
+    bottom: -300px;
+}
+.xlarge{
+    width: 800px;
+    height: 800px;
+    left: -400px;
+    bottom: -400px;
+}
+
+
+.xxlarge2{
+    width: 1100px;
+    height: 1100px;
+    right: -500px;
+    top: -500px;
+}
+
+.small2{
+    width: 200px;
+    height: 200px;
+    right: -100px;
+    top: -100px;
+}
+.medium2{
+    width: 400px;
+    height: 400px;
+    right: -200px;
+    top: -200px;
+}
+.large2{
+    width: 600px;
+    height: 600px;
+    right: -300px;
+    top: -300px;
+}
+.xlarge2{
+    width: 800px;
+    height: 800px;
+    right: -400px;
+    top: -400px;
+}
+.color1{
+opacity: 0.2;
+}
+.color2{
+opacity: 0.5;
+}
+.color3{
+opacity: 0.7;
+}
+.color4{
+opacity: 0.8;
+}
+.color5{
+opacity: 0.9;
+}
+
+@keyframes animate {
+    0%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+
+    100%{
+        transform: scale(0.8);
+    }
+}
+    
+@keyframes animates {
+    0%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+
+    100%{
+        transform: scale(0.8);
+    }
+    
+}
+
+
+header{
+    text-align: center;
+    padding: 1rem 0;
+    background: rgba(0, 0,0, 0.2);
+}
+header h1{
+    margin: 0;
+    font-size: 2rem;
+}
+header p{
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+main{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.poll-container{
+    max-width: 500px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0,0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+.poll-container h2{
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+
+}
+
+.options{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.options li{
+    margin: 0.5rem 0;
+}
+.options button{
+    width: 100%;
+    padding: 0.7rem;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transform: all 0.2s;
+    background: #fff;
+    color: #2575fc;
+}
+
+.options button:hover{
+    background: #2575fc;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.result{
+    margin-top: 1rem;
+}
+.result p {
+    margin: 0.5rem 0;
+}
+
+.progress-bar{
+    width: 100%;
+    background: #ccc;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    overflow: hidden;
+}
+
+.progress-bar div{
+    height: 20px;
+    background: #6a11cb;
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+}
+
+.reset-button{
+    margin-top: 1rem;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    background: #f00;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0,0, 0.2);
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+footer p{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Polling App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="circle xxlarge color1"></div>
+        <div class="circle xlarge color2"></div>
+        <div class="circle large color3"></div>
+        <div class="circle medium color4"></div>
+        <div class="circle small color5"></div>
+
+
+
+        <div class="circle2 xxlarge2 color1"></div>
+        <div class="circle2 xlarge2 color2"></div>
+        <div class="circle2 large2 color3"></div>
+        <div class="circle2 medium2 color4"></div>
+        <div class="circle2 small2 color5"></div>
+
+
+
+    </div>
+    <header>
+        <h1>Vote for Your Favorite!</h1>
+        <p>Made With ❤️ By @Techgenius</p>
+
+    </header>
+    <main>
+        <div class="poll-container">
+            <h2>Which Highseas Events are You going to Participate?</h2>
+            <ul class="options">
+                <li><button onclick="vote('Show and Tell')">Show and Tell</button></li>
+                <li><button onclick="vote('High Seas Jam')">High Seas Jam</button></li>
+                <li><button onclick="vote('Chess Night')">Chess Night</button></li>
+                <li><button onclick="vote('Tetris Night')">Tetris Night</button></li>
+            </ul>
+            <div class="results" id="results"></div>
+            <button onclick="resetVotes()" class="reset-button">Reset Votes</button>
+        </div>
+    </main>
+    <footer>
+
+        <p>&copy; 2024 Polling App. All rights reserved by Highseas.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
