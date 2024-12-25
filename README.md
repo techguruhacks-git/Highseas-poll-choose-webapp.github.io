@@ -1,5 +1,7 @@
 # Highseas-poll-choose-webapp.github.io
 
+Disclaimer: This project is made by Tutorial and I add some features and change the user interface also take help of AI to solve some error only.
+
 Sailor's Wavepoll Real time Progress with Persistent Data and Background Animation:
  
 A Dynamic web based application for conducting and displaying polls for high seas themed events. This project features: 
